@@ -1,0 +1,18 @@
+Для проверки факта непрохождения авторизации в задании по Selenium IDE хотела использовать не адрес страницы, а првоерку наличия на странице элемента, например кнопки "Войти",
+но assertText не подходит, т.к. там нет "текста", только value=Войти. А найти команду для поиска "элемента" по его локатору мне не удалось.
+Пробовала "гуглить", но безуспешно. Если такая команда имеется, можете подсказать её?
+
+Задание на дом «Локаторы»
+2. Написать 5 вариантов селекторов для поля «Пароль» на сайте https://eu.battle.net/login/ru/. Один из вариантов должен включать родительский элемент:
+        #password
+        .blz-password-wrapper > input
+        .controls div:first-child
+        div.grid-container.wrapper div.controls [name='password']
+        [placeholder='Пароль']
+
+3. Написать локатор для второй картинки в неупорядоченном списке на странице https://www.epicgames.com/store/ru/news:
+     //*[contains(@data-image,'ede49')]
+
+Задание на дом «Локаторы*»
+Написать селектор для кнопки на странице https://www.epicgames.com/id/register/epic:
+        div[class*='Mui-error'] button[class*='MuiButtonBase-root'][name='tooltip'] > span.MuiIconButton-label > svg.MuiSvgIcon-root
