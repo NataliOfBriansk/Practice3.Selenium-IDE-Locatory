@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
-<title>Untitled Test Suite</title>
+<title>NataliTests</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -51,12 +51,12 @@
 <tr><td>type</td><td>id=password<datalist></datalist></td><td>admin20</td></tr>
 <tr><td>click</td><td>xpath=//input[@value='Войти']<datalist></datalist></td><td></td></tr>
 <tr><td>click</td><td>link=Report Issue<datalist><option>Link=mantisbt/bug_report_page.php</option><option>Link=/mantisbt/bug_report_page.php</option><option>link=/mantisbt/bug_report_page.php</option><option>link=bug_report_page</option><option>link=Report Issue</option></datalist></td><td></td></tr>
-<tr><td>click</td><td>id=summary<datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=summary<datalist><option>id=summary</option></datalist></td><td></td></tr>
 <tr><td>store</td><td>MySummary<datalist></datalist></td><td>summary</td></tr>
-<tr><td>type</td><td>id=summary<datalist></datalist></td><td>${summary}</td></tr>
+<tr><td>type</td><td>id=summary<datalist><option>id=summary</option></datalist></td><td>${summary}</td></tr>
 <tr><td>click</td><td>id=description<datalist></datalist></td><td></td></tr>
 <tr><td>type</td><td>id=description<datalist></datalist></td><td>MyDescription</td></tr>
-<tr><td>click</td><td>xpath=//input[@value='Submit Issue']<datalist></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//input[@value='Submit Issue']<datalist><option>xpath=//input[@value='Submit Issue']</option></datalist></td><td></td></tr>
 <tr><td>click</td><td>link=View Issues<datalist><option>Link=view_all_bug_page.php</option><option>link=view_all_bug_page.php</option><option>link=View Issues</option></datalist></td><td></td></tr>
 <tr><td>storeText</td><td>css=td.column-id > a<datalist></datalist></td><td>NumberId</td></tr>
 <tr><td>click</td><td>css=td.column-id > a<datalist></datalist></td><td></td></tr>
@@ -74,8 +74,14 @@
 <tr><td>click</td><td>xpath=//input[@value='Войти']<datalist><option>xpath=//input[@value='Войти']</option><option>xpath=//form[@id='login-form']/fieldset/input[2]</option><option>xpath=//input[2]</option><option>css=input.width-40.pull-right.btn.btn-success.btn-inverse.bigger-110</option></datalist></td><td></td></tr>
 <tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>xpath=//input[@id='password']</option><option>xpath=//form[@id='login-form']/fieldset/label/span/input</option><option>xpath=//span/input</option><option>css=#password</option></datalist></td><td>admin20</td></tr>
 <tr><td>click</td><td>xpath=//input[@value='Войти']<datalist><option>xpath=//input[@value='Войти']</option><option>xpath=//form[@id='login-form']/fieldset/input[3]</option><option>xpath=//input[3]</option><option>css=input.width-40.pull-right.btn.btn-success.btn-inverse.bigger-110</option></datalist></td><td></td></tr>
-<tr><td>click</td><td>link=View Issues<datalist><option>xpath=//div[@id='sidebar']/ul/li[2]/a/i</option><option>xpath=//div[2]/div/ul/li[2]/a/i</option><option>css=i.menu-icon.fa.fa-list-alt</option><option>link=View Issues</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>link=Report Issue<datalist><option>link=Report Issue</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=summary<datalist><option>id=summary</option></datalist></td><td></td></tr>
 <tr><td>store</td><td>MySummary<datalist><option>MySummary</option></datalist></td><td>summary</td></tr>
+<tr><td>type</td><td>id=summary<datalist><option>id=summary</option></datalist></td><td>${summary}</td></tr>
+<tr><td>click</td><td>id=description<datalist><option>id=description</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=description<datalist><option>id=description</option></datalist></td><td>MyDescription</td></tr>
+<tr><td>click</td><td>xpath=//input[@value='Submit Issue']<datalist><option>xpath=//input[@value='Submit Issue']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>link=View Issues<datalist><option>xpath=//div[@id='sidebar']/ul/li[2]/a/i</option><option>xpath=//div[2]/div/ul/li[2]/a/i</option><option>css=i.menu-icon.fa.fa-list-alt</option><option>link=View Issues</option></datalist></td><td></td></tr>
 <tr><td>storeText</td><td>css=td.column-id > a<datalist><option>css=td.column-id > a</option></datalist></td><td>NumberId</td></tr>
 <tr><td>click</td><td>css=td.column-id > a<datalist><option>xpath=//table[@id='buglist']/tbody/tr/td[4]/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[2]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Updated'])[1]/following::a[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='General'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='minor'])[1]/preceding::a[1]</option><option>xpath=//div[2]/div/table/tbody/tr/td[4]/a</option><option>css=td.column-id > a</option></datalist></td><td></td></tr>
 <tr><td>assertText</td><td>class=bug-summary<datalist><option>class=bug-summary</option></datalist></td><td>${NumberId}: ${summary}</td></tr>
