@@ -7,11 +7,10 @@
         [placeholder='Пароль']
 
 3. Написать локатор для второй картинки в неупорядоченном списке на странице https://www.epicgames.com/store/ru/news:
-        a[aria-labelledby*='albert'] img.css-1jk123r или так 
-        div.css-rl9sa6 img[data-image*='dbd-ch25-keyart'] или так
-        ul.css-16eqsdo li:nth-child(2) img.css-1jk123r
+        ul[data-testid='feed-items-list'] img.css-1jk123r
+        
 
 
 Задание на дом «Локаторы*»
 Написать селектор для кнопки на странице https://www.epicgames.com/id/register/epic:
-        div.Mui-error button[name='tooltip']
+        div[class*='iCPaAK'] div:nth-child(5) button[name='tooltip']
