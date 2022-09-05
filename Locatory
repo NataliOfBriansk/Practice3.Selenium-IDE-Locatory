@@ -7,7 +7,7 @@
         [placeholder='Пароль']
 
 3. Написать локатор для второй картинки в неупорядоченном списке на странице https://www.epicgames.com/store/ru/news:
-        ul[data-testid='feed-items-list'] img.css-1jk123r
+        ul[data-testid='feed-items-list'] li:nth-child(2) img
         
 
 
