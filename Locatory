@@ -13,4 +13,4 @@
 
 Задание на дом «Локаторы*»
 Написать селектор для кнопки на странице https://www.epicgames.com/id/register/epic:
-        div[class*='iCPaAK'] div:nth-child(5) button[name='tooltip']
+        //*[contains(@title, 'Пароли')]
